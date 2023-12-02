@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Aniversário</title>
+</head>
+<body>
+    <section class="hero">
+        <form class="hero__form">
+            <div class="hero__form__item">
+                <label for="name">Insira o seu nome</label>
+                <input required id="name" type="text" placeholder="Nome">
+            </div>
+            <div class="hero__form__item">
+                <label for="birthdate">insira a data</label>
+                <input required id="birthdate" type="text" placeholder="ex: Jan 01, 2024 00:00:00">
+            </div>
+            <button id="putdate">Iniciar contagem</button>
+            <p class="exemplo">Caso precise, copie aqui o exemplo e modifique a data</p>
+            <span>Jan 01, 2024 00:00:00</span>
+        </form>
+        <div class="hero__conterDate hidden">
+            <img src="./images/gifs-de-confete.gif" alt="Bolo de Aniversário">
+            <h1 class="phrase"></h1>
+            <span class="counter"></span>
+            <br>
+            <button id="clearDate">Mudar data</button>
+        </div>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
