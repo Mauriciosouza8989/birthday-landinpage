@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,32 +7,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Aniversário</title>
 </head>
 <body>
     <section class="hero">
-        <form class="hero__form">
-            <div class="hero__form__item">
-                <label for="name">Insira o seu nome</label>
-                <input required id="name" type="text" placeholder="Nome">
-            </div>
-            <div class="hero__form__item">
-                <label for="birthdate">insira a data</label>
-                <input required id="birthdate" type="text" placeholder="ex: Jan 01, 2024 00:00:00">
-            </div>
-            <button id="putdate">Iniciar contagem</button>
-            <p class="exemplo">Caso precise, copie aqui o exemplo e modifique a data</p>
-            <span>Jan 01, 2024 00:00:00</span>
-        </form>
-        <div class="hero__conterDate hidden">
+        <div class="hero__conterDate">
             <img src="./images/gifs-de-confete.gif" alt="Bolo de Aniversário">
-            <h1 class="phrase"></h1>
+            <h1 class="phrase">O Aniversário de Maurício Sousa será em</h1>
             <span class="counter"></span>
-            <br>
-            <button id="clearDate">Mudar data</button>
+            <divclass="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Altinópolis - Rua Minas Gerais - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        02/11/2024 às 18:00
+                    </li>
+                    <li class="infos-bar__infos__item atencao">
+                        <b>Atenção: </b>Não esqueça de levar o <b>Convite</b> 😉
+                    </li>
+                </ul>
+            </divclass=>
         </div>
     </section>
+    <section class="event event--churrasco">
+        <div data-aos="fade-up" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Churrasco</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="images/churrsco.webp" alt="churrasco">
+        </div>
+    </section>
+    <section class="event event--salgados">
+        <div data-aos="fade-up" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Salgados</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="images/salgados.webp" alt="salgados">
+        </div>
+    </section>
+    <section class="event event--bebidas">
+        <div data-aos="fade-up" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="images/bebidas.webp" alt="bebidas">
+        </div>
+    </section>
+    <footer class="footer">
+        <h3>Para mais informações entre em contato</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="images/whatsapp.png" alt="whatsapp">
+                    whatsapp
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/facebook.png" alt="facebook">
+                    Facebook
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/linkedin.png" alt="linkedin">
+                    Linkedin
+                </a>
+            </li>
+        </ul>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
